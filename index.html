@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+ <meta charset="utf-8">
+ <title>The CoderSchool - Cupertino | WebRox 2019</title>
+ <link rel="stylesheet" href="css/normalize.css">
+ <link href='//fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" href="css/responsive.css">
+ <script type="text/javascript" src="js/team.js"></script>
+ <script type="text/javascript" src="js/about.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <script>
+  var selected = '1';
+
+  function myFunction(elem, value, page) {
+   document.getElementById('nav' + selected).className = '';
+   elem.className = value;
+   selected = page;
+
+   if (page == "1") {
+    load1();
+   }
+
+   if (page == "2") {
+    load2();
+   }
+  }
+
+  function load1() {
+   document.getElementById("homeJS").innerHTML = html1;
+  }
+
+  function load2() {
+   document.getElementById("homeJS").innerHTML = html2;
+  }
+
+ </script>
+</head>
+
+
+<body onload="load1();">
+ <header>
+  <a href="main.html">
+   <img id="logo" src="img/logo.png">
+  </a>
+  <nav>
+   <ul>
+    <a href="#" id="nav1" class="selected" onclick="myFunction(this, 'selected', '1')">
+     <li>Home</li>
+    </a>
+    <a href="#" id="nav2" onclick="myFunction(this, 'selected', '2')">
+     <li>Our Team</li>
+    </a>
+   </ul>
+  </nav>
+ </header>
+ <div id="wrapper">
+  <section id="homeJS">
+  </section>
+  <footer id="footer">
+   <p>© 2019 The CoderSchool Cupertino</p>
+  </footer>
+ </div>
+</body>
+</html>
