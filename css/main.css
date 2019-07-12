@@ -112,6 +112,10 @@ nav a.selected {
 /*    Gallery:       */
 /************************************************/
 
+img {
+  width: 100%;
+}
+
 #gallery {
   list-style: none;
   padding: 0;
@@ -138,7 +142,14 @@ nav a.selected {
 /*    About:  / Contact      */
 /************************************************/
 
-.profile-pic {border-radius: 2%;max-width: 140px;clear: left;display: block;margin: 0px auto 30px;}
+.profile-pic {
+  border-radius: 2%;
+  max-width: 200px;
+  clear: left;
+  display: block;
+  margin: 0px auto 30px;
+  padding-top: 10px;
+}
 
 section {
   margin: 0;
