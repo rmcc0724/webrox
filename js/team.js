@@ -48,7 +48,7 @@ html2 +=    "</a>";
 html2 +=    "</li>";
 
 html2 +=    "<li>";
-html2 +=    "<a target=_blank href=https://codepen.io/sofiayf/pen/VJNxGy>";
+html2 +=    "<a target=_blank href=https://codepen.io/sofiayf/pen/NZoXBq>";
 html2 +=    "<img src=img/Sofia.jpg alt=Sofia Tedesco>";
 html2 +=    "<p>Sofia Tedesco</p>";
 html2 +=    "</a>";
